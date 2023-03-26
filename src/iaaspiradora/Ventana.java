@@ -24,7 +24,7 @@ public class Ventana extends javax.swing.JFrame implements ChangeListener{
     public CargarAspiradora cargaraspiradora;
     public ControlValidacion controlValidacion;
     private Ambt ambt;
-     public final String[] listWidth = {"20"};
+     public final String[] listWidth = {"20" , "30"};
     
     public Ventana() {
         initComponents();
@@ -72,7 +72,7 @@ public class Ventana extends javax.swing.JFrame implements ChangeListener{
         jLabel1.setText("Dimensiones");
 
         listadedimensiones.setFont(new java.awt.Font("Times New Roman", 0, 12));
-        listadedimensiones.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "20" }));
+        listadedimensiones.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"20", "30" }));
         listadedimensiones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 listadedimensionesActionPerformed(evt);
